@@ -2,8 +2,10 @@
 
 This is a reproduction of the classic snake game, using Arduino.
 
- ## Description
- ## Menu Requirements
+<details>
+  <summary><h2><b>Description</b></h2></summary>
+</details>
+
 <details>
   <summary><h2><b>The menu</b></h2></summary>
   
@@ -13,7 +15,7 @@ This is a reproduction of the classic snake game, using Arduino.
      
  **2. Contain the following categories:**
  
-**Start game**, starts the initial level of your game
+**Start game:** start the level
 
 **Settings:**
 
@@ -30,6 +32,7 @@ This is a reproduction of the classic snake game, using Arduino.
   **3. While playing the game:** display relevant info
   
 – Score
+
 – Time
 
   **4. Upon game ending:**
