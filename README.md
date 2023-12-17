@@ -66,14 +66,16 @@ that’s directly connected to 5v). Save it to eeprom.
 <details>
   <summary><h2><b>Description📋</b></h2></summary>
   To enter the menu you have to press the joystick. In the menu you can move up and down with the joystick. To reach the submenu, it is necessary to move to the right with the joystick.
-  To change the name, you must move up and down on each of the 3 boxes initially set with the message "AAA". To save the name you have to press the joystick
+  
+  To change the name, you must move up and down on each of the 3 boxes initially set with the message "AAA". To save the name you have to press the joystick.
+  
   The dot (snake) must eat 10 balls (flashing lights) to finish the level.
   
-  <h3>Bugs in game mode</h3>
+  <h3>Bugs</h3>
   
-  -
+  - The snake does not grow gradually after eating
+  - The brightness of the LCD and the matrix does not work
   
-  -
 </details>
 <details>
   <summary><h2><b>Components🛠</b></h2></summary>
