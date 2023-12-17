@@ -4,7 +4,15 @@ This is a reproduction of the classic snake game, using Arduino.
 
 <details>
   <summary><h2><b>Description📋</b></h2></summary>
-  The dot(snake) must eat 10 balls (flashing lights) to finish the level.
+  To enter the menu you have to press the joystick. In the menu you can move up and down with the joystick. To reach the submenu, it is necessary to move to the right with the joystick.
+  To change the name, you must move up and down on each of the 3 boxes initially set with the message "AAA". To save the name you have to press the joystick
+  The dot (snake) must eat 10 balls (flashing lights) to finish the level.
+  
+  ##Bugs in game mode
+  
+  -
+  
+  -
 </details>
 <details>
   <summary><h2><b>Components🛠</b></h2></summary>
