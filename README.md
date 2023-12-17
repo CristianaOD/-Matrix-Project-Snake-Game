@@ -18,7 +18,9 @@ This is a reproduction of the classic snake game, using Arduino.
 **Settings:**
 
 – LCD brightness control 
+
 – Matrix brightness control
+
 – Sounds on or off
 
 **About:** include details about the creator of the game
