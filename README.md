@@ -15,6 +15,7 @@ This is a reproduction of the classic snake game, using Arduino.
   <li>LCD Display</li>
   <li>MAX7219</li>
   <li>Resistors and capacitors</li>
+  <li>A buzzer</li>
   <li>Breadboard </li>
   <li>Connecting wires</li>
 </details>
