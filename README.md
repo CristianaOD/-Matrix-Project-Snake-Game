@@ -97,19 +97,19 @@ that’s directly connected to 5v). Save it to eeprom.
      
  🖇**2. Contain the following categories:**
  
-**Start game:** start the level
+**-Start game:** start the level
 
-**Settings:**
+**-Settings:**
 
-<li>LCD brightness control </li> 
+  <li>LCD brightness control </li> 
 
-<li>Matrix brightness control</li> 
+  <li>Matrix brightness control</li> 
 
-<li>Sounds on or off</li> 
+  <li>Sounds on or off</li> 
 
-**About:** include details about the creator of the game
+**-About:** include details about the creator of the game
 
-**How to play** include how the game works
+**-How to play** include how the game works
 
   🖇**3. While playing the game:** display relevant info
   
