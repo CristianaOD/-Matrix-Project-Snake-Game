@@ -44,7 +44,7 @@ should only be closed by the player, pressing a button.
 </details>
 <details>
   <summary><h2><b>Picture of the setup</b></h2></summary>
-<img src="https://github.com/CristianaOD/IntroductionToRobotics/blob/main/Homeworks/WhatsApp%20Image%202023-10-21%20at%2021.38.51.jpeg?raw=true" alt="A photo of my setup" width="500" height="300">
+<img src="https://github.com/CristianaOD/-Matrix-Project-Snake-Game/blob/main/Matrix_Project_Snake_Game/Matrix%20Project%20Snake%20Game.jpeg?raw=true" alt="A photo of my setup" width="500" height="300">
 </details>
 <details>
   <summary><h2><b>Video🎥</b></h2></summary>
