@@ -7,13 +7,13 @@ This is a reproduction of the classic snake game, using Arduino.
   The dot(snake) must eat 10 balls (flashing lights) to finish the level.
 </details>
 <details>
-  <summary><h2><b>The menu📖</b></h2></summary>
+  <summary><h2><b>The menu🖨</b></h2></summary>
   
- **1. Intro Message**
+ 🖇**1. Intro Message**
  
    - When powering up a game, a greeting message shown for a few moments
      
- **2. Contain the following categories:**
+ 🖇**2. Contain the following categories:**
  
 **Start game:** start the level
 
@@ -29,13 +29,13 @@ This is a reproduction of the classic snake game, using Arduino.
 
 **How to play** include how the game works
 
-  **3. While playing the game:** display relevant info
+  🖇**3. While playing the game:** display relevant info
   
 – Score
 
 – Time
 
-  **4. Upon game ending:**
+  🖇**4. Upon game ending:**
   
 Display relevant game info: score, time, lives left etc. Must
 inform player if he/she beat the highscore. This menu
@@ -43,7 +43,7 @@ should only be closed by the player, pressing a button.
  
 </details>
 <details>
-  <summary><h2><b>Picture of the setup</b></h2></summary>
+  <summary><h2><b>Picture of the setup📷</b></h2></summary>
 <img src="https://github.com/CristianaOD/-Matrix-Project-Snake-Game/blob/main/Matrix_Project_Snake_Game/Matrix%20Project%20Snake%20Game.jpeg?raw=true" alt="A photo of my setup" width="500" height="300">
 </details>
 <details>
