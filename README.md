@@ -3,7 +3,7 @@
 This is a reproduction of the classic snake game, using Arduino.
 
 <details>
-  <summary><h2><b>Description</b></h2></summary>
+  <summary><h2><b>Description📋</b></h2></summary>
   The dot(snake) must eat 10 balls (flashing lights) to finish the level.
 </details>
 <details>
