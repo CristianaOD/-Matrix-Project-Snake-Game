@@ -16,7 +16,7 @@ This is a reproduction of the classic snake game, using Arduino.
   <li>MAX7219</li>
   <li>Resistors and capacitors</li>
   <li>Breadboard </li>
-  <li>connecting wires</li>
+  <li>Connecting wires</li>
 </details>
 <details>
   <summary><h2><b>The menu🖨</b></h2></summary>
