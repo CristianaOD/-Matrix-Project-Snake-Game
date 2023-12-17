@@ -8,7 +8,7 @@ This is a reproduction of the classic snake game, using Arduino.
   To change the name, you must move up and down on each of the 3 boxes initially set with the message "AAA". To save the name you have to press the joystick
   The dot (snake) must eat 10 balls (flashing lights) to finish the level.
   
-  ##Bugs in game mode
+  <h3>Bugs in game mode</h3>
   
   -
   
