@@ -7,21 +7,17 @@ This is a reproduction of the classic snake game, using Arduino.
 <details>
   <summary><h2><b>The menu</b></h2></summary>
   
-  1. Intro Message
+ **1. Intro Message**
    - When powering up a game, a greeting message shown for a few moments
   2. Should contain roughly the following categories:
-(a) Start game, starts the initial level of your game
-(b) Settings:
-– LCD brightness control (mandatory, must change LED wire
-that’s directly connected to 5v). Save it to eeprom.
-– Matrix brightness control (see function setIntesnity from the
-ledControl library). Make sure to display something on the
-matrix when selecting it. Save it to eeprom.
-– Sounds on or off. Save it to eeprom.
-(c) About: should include details about the creator(s) of the game.
-At least game name, author and github link or user (use scrolling
-text?)
-4. While playing the game: display all relevant info
+**Start game**, starts the initial level of your game
+**Settings:**
+– LCD brightness control 
+– Matrix brightness control
+– Sounds on or off
+**About:** include details about the creator of the game
+**How to play** include how the game works
+  3. While playing the game: display all relevant info
 – Lives
 – Level
 – Score
