@@ -101,11 +101,11 @@ that’s directly connected to 5v). Save it to eeprom.
 
 **Settings:**
 
-– LCD brightness control 
+<li>LCD brightness control </li> 
 
-– Matrix brightness control
+<li>Matrix brightness control</li> 
 
-– Sounds on or off
+<li>Sounds on or off</li> 
 
 **About:** include details about the creator of the game
 
