@@ -9,8 +9,14 @@ This is a reproduction of the classic snake game, using Arduino.
 <details>
   <summary><h2><b>Components📋</b></h2></summary>
   <ul>The components used in this homework include:</ul>
-    <li>Arduino Uno Board</li>A
-    <li>Joystick</li>, 8x8 LED Matrix, LCD Display, MAX7219, Resistors and capacitors, Breadboard and connecting wires.
+    <li>Arduino Uno Board</li>
+    <li>Joystick</li>
+  <li>8x8 LED Matrix</li>
+  <li>LCD Display</li>
+  <li>MAX7219</li>
+  <li>Resistors and capacitors</li>
+  <li>Breadboard </li>
+  <li>connecting wires</li>
 </details>
 <details>
   <summary><h2><b>The menu🖨</b></h2></summary>
