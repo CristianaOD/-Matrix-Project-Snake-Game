@@ -7,6 +7,12 @@ This is a reproduction of the classic snake game, using Arduino.
   The dot(snake) must eat 10 balls (flashing lights) to finish the level.
 </details>
 <details>
+  <summary><h2><b>Components📋</b></h2></summary>
+  <ul>The components used in this homework include:</ul>
+    <li>Arduino Uno Board</li>A
+    <li>Joystick</li>, 8x8 LED Matrix, LCD Display, MAX7219, Resistors and capacitors, Breadboard and connecting wires.
+</details>
+<details>
   <summary><h2><b>The menu🖨</b></h2></summary>
   
  🖇**1. Intro Message**
