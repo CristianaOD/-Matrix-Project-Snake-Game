@@ -4,8 +4,8 @@ This is a reproduction of the classic snake game, using Arduino.
 
 <details>
   <summary><h2><b>Description</b></h2></summary>
+  The dot(snake) must eat 10 balls (flashing lights) to finish the level.
 </details>
-
 <details>
   <summary><h2><b>The menu</b></h2></summary>
   
@@ -41,14 +41,5 @@ Display relevant game info: score, time, lives left etc. Must
 inform player if he/she beat the highscore. This menu
 should only be closed by the player, pressing a button.
  
-
 </details>
 
- ## Game requirements
-
-<details>
-<summary>Descriere</summary>
-  
-Aici poți să incluzi o scurtă descriere a proiectului.
-
-</details>
