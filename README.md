@@ -3,50 +3,64 @@
 This is a reproduction of the classic snake game, using Arduino.
 <details>
   <summary><h2><b>Task  Requirements📌</b></h2></summary>
-Menu Requirements
-• Menu Task: Create a menu for your game, emphasis on ‘the game. You
-should scroll on the LCD with the joystick. Remember you have quite a
-lot of flexibility here, but do not confuse that with a free ticket to slack
-off. The menu should include the following functionality:
-1. Intro Message - When powering up a game, a greeting message
+  
+<h3>Menu Requirements</h3>
+
+**•Menu Task:** 
+
+Create a menu for your game, emphasis on ‘the game. You should scroll on the LCD with the joystick. Remember you have quite a lot of flexibility here, but do not confuse that with a free ticket to slack off. The menu should include the following functionality:
+
+**1. Intro Message** 
+
+- When powering up a game, a greeting message
 should be shown for a few moments.
-2. Should contain roughly the following categories:
-(a) Start game, starts the initial level of your game
-(b) Settings:
+
+**2. Should contain roughly the following categories:**
+
+**(a) Start game**, starts the initial level of your game
+
+**(b) Settings:**
+
 – LCD brightness control (mandatory, must change LED wire
 that’s directly connected to 5v). Save it to eeprom.
-– Matrix brightness control (see function setIntesnity from the
-ledControl library). Make sure to display something on the
-matrix when selecting it. Save it to eeprom.
+
+– Matrix brightness control (see function setIntesnity from the ledControl library). Make sure to display something on the matrix when selecting it. Save it to eeprom.
+
 – Sounds on or off. Save it to eeprom.
-(c) About: should include details about the creator(s) of the game.
-At least game name, author and github link or user (use scrolling
-text?)
-3. While playing the game: display all relevant info
+
+**(c) About:** should include details about the creator(s) of the game. At least game name, author and github link or user (use scrolling text?)
+
+**3. While playing the game:** display all relevant info
+
 – Lives
+
 – Level
+
 – Score
+
 – Time?
+
 – etc
-4. Upon game ending:
-(a) Display relevant game info: score, time, lives left etc. Must
-inform player if he/she beat the highscore. This menu
-should only be closed by the player, pressing a button.
-3 Game requirements
-• Game requirements:
-– Minimal components: an LCD, a joystick, a buzzer and the led
-matrix.
-– You must add basic sounds to the game (when ”eating” food, when
-dying, when finishing the level etc). Extra: add theme songs.
+**4. Upon game ending:**
+
+**Display relevant game info:** score, time, lives left etc. Must inform player if he/she beat the highscore. This menu should only be closed by the player, pressing a button.
+
+<h3> Game requirements</h3>
+
+**• Game requirements:**
+
+– Minimal components: an LCD, a joystick, a buzzer and the led matrix.
+
+– You must add basic sounds to the game (when ”eating” food, when dying, when finishing the level etc). Extra: add theme songs.
+
 – It must be intuitive and fun to play.
+
 – It must make sense in the current setup.
-Introduction to Robotics Matrix Project
-Unibuc Robotics 2022 - 2023
-– It can be a classic snake game, basically where the length of the
-snake increases in time. You also need to increase the speed, either
-at different snake lengths or create separate levels. You call.
-– The ”food” should blink, so as to separate it from the rest of the
-snake.
+
+– It can be a classic snake game, basically where the length of the snake increases in time. You also need to increase the speed, either at different snake lengths or create separate levels. You call.
+
+– The ”food” should blink, so as to separate it from the rest of the snake.
+
 </details>
 <details>
   <summary><h2><b>Description📋</b></h2></summary>
