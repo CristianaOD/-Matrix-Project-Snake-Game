@@ -41,6 +41,7 @@ that’s directly connected to 5v). Save it to eeprom.
 – Time?
 
 – etc
+
 **4. Upon game ending:**
 
 **Display relevant game info:** score, time, lives left etc. Must inform player if he/she beat the highscore. This menu should only be closed by the player, pressing a button.
