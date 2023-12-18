@@ -73,8 +73,8 @@ that’s directly connected to 5v). Save it to eeprom.
   
   <h3>Bugs</h3>
   
-  - The snake does not grow gradually after eating
-  - The brightness of the LCD and the matrix does not work
+  - The snake does not gradually grow after eating the flashing dots
+  - LCD and matrix brightness not working
   
 </details>
 <details>
