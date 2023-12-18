@@ -209,6 +209,7 @@ void setup() {
   LCDbrightness = EEPROM.read(1);
   matrixBrightness = EEPROM.read(2);
   sounds = EEPROM.read(3);
+  EEPROM.get(0, bestScore);
   song();
   analogWrite(3, LCDbrightness);
   pinMode(pinSW, INPUT_PULLUP);
@@ -238,7 +239,7 @@ void loop() {
   } 
   else {
     blinkLetterName();
-    if (aboutScrollText == 1 && scrollTextPosition < messageAbout.length() - 14) {
+    if (aboutScrollText == 1 && scrollTextPosition < messageAbout.length() - 15) {
       lcd.setCursor(0, 1);
       lcd.print(messageAbout.substring(scrollTextPosition-1, 16 + scrollTextPosition));
       if (millis() - prevScrollTime >= 700) {
@@ -248,7 +249,7 @@ void loop() {
         scrollTextPosition++;
       }
     }
-    if (HTPscrollText == 1 && scrollTextPosition < messageAbout.length() - 14) {
+    if (HTPscrollText == 1 && scrollTextPosition < messageAbout.length() - 15) {
       lcd.setCursor(0, 0);
       lcd.print("   HOW TO PLAY   ");
       lcd.setCursor(0, 1);
@@ -309,7 +310,6 @@ void game() {
     updateMatrix();
     matrixChanged = false;
   }
-  eatStartTime = millis();  // setează timpul de inceput
 }
 
 void updateMatrix() {
@@ -359,6 +359,7 @@ void exitGame() {
     lcd.setCursor(0, 3);
     lcd.print("New Highscore!");
     beatHighscore = 1;  // indicator pentru un nou scor maxim
+    EEPROM.put(4, bestScore);
   }
   else {
     state = 1;
@@ -426,6 +427,8 @@ void updatePositions() {
       lcd.print(score);
       generateFood();
     }
+    
+    eatStartTime = millis();  // seteaza timpul de inceput
     matrixChanged = true;
     matrix[xLastPos][yLastPos] = 0; // sterg pozitia anterioara a sarpelui
     matrix[xPos][yPos] = 1;
@@ -436,10 +439,9 @@ void updatePositions() {
   //for (int i = snakeSize - 1; i > 0; --i) {
   //  snakeSegments[i] = snakeSegments[i - 1];
   //}
-  // Setează noile coordonate ale capului șarpelui
+  // seteaza noile coordonate ale capului sarpelui
   //snakeSegments[0].x = xPos;
   //snakeSegments[0].y = yPos;
-
 }
 // generez mancare (led-uri care clipesc)
 void generateFood() {
@@ -516,7 +518,7 @@ void buttonLogic() {
           lcd.print("TIME: ");
           unsigned long elapsedTime = currentTime - eatStartTime;
           lcd.print(elapsedTime / 1000);  // afiseaza timpul in secunde
-          lc.clearDisplay(0);  
+          lc.clearDisplay(0);
           matrix[xPos][yPos] = 1;
           generateFood();
           
@@ -717,8 +719,8 @@ void yAxisLogic() {
 }
 
 void xAxisLogic() {
-  if (xValue < minThreshold && joyBackToMiddleX == LOW && state == 1 && startGame == 0){ //ma misc in jos prin meniu
-    if (menuCurrentItem < 4) {
+  if (xValue < minThreshold && joyBackToMiddleX == LOW && state == 1 && startGame == 0){ //ma misc prin meniu
+    if (menuCurrentItem < 3) {
       menuCurrentItem++;
       lcd.setCursor(0, 1);
       lcd.print("                ");
@@ -730,7 +732,7 @@ void xAxisLogic() {
         lc.setRow(0, row, matrixMenu[menuCurrentItem][row]);
       }
     } 
-    else if (menuCurrentItem == 4) {
+    else if (menuCurrentItem == 3) {
       menuCurrentItem = 0;
       lcd.setCursor(0, 1);
       lcd.print("                ");
@@ -758,7 +760,7 @@ void xAxisLogic() {
       }
     } 
     else if (menuCurrentItem == 0) {
-      menuCurrentItem = 4;
+      menuCurrentItem = 3;
       lcd.setCursor(0, 1);
       lcd.print("                ");
       lcd.setCursor(0, 1);
@@ -772,7 +774,7 @@ void xAxisLogic() {
     joyBackToMiddleX = HIGH;
   } 
   else if (xValue < minThreshold && joyBackToMiddleX == LOW && state == 2 && startGame == 0 && settings == 1) {  // ma misc in jos prin submeniu
-    if (settingsPos < 5) {
+    if (settingsPos < 4) {
       settingsPos++;
       lcd.setCursor(0, 1);
       lcd.print("                ");
@@ -780,7 +782,7 @@ void xAxisLogic() {
       lcd.print(">");
       lcd.print(settingsOptions[settingsPos]);
     }
-    else if (settingsPos == 5) {
+    else if (settingsPos == 4) {
       settingsPos = 0;
       lcd.setCursor(0, 1);
       lcd.print("                ");
@@ -800,7 +802,7 @@ void xAxisLogic() {
       lcd.print(settingsOptions[settingsPos]);
     }
     else if (settingsPos == 0) {
-      settingsPos = 5;
+      settingsPos = 4;
       lcd.setCursor(0, 1);
       lcd.print("                ");
       lcd.setCursor(0, 1);
@@ -842,7 +844,7 @@ void xAxisLogic() {
     } 
     // modific luminozitatea matrice
     else if (settingsPos == 2) { 
-      if (matrixBrightness > 0) {
+      if (matrixBrightness > 1) {
         matrixBrightness--;
         lcd.setCursor(0, 1);
         lcd.print("                ");
@@ -869,7 +871,7 @@ void xAxisLogic() {
         lcd.write(byte(0));
         lcd.print(" ");
         lcd.print("OFF");
-        EEPROM.update(4, sounds);
+        EEPROM.update(3, sounds);
       }
     }
     joyBackToMiddleX = HIGH;
@@ -913,6 +915,7 @@ void xAxisLogic() {
         lcd.write(byte(0));
         lcd.setCursor(4, 1);
         lcd.print("-");
+        lcd.setCursor(5, 1);
         for (int i = 0; i < matrixBrightness; ++i)
           lcd.write(byte(1));
         lcd.setCursor(10, 1);
@@ -930,7 +933,7 @@ void xAxisLogic() {
         lcd.write(byte(0));
         lcd.print(" ");
         lcd.print("ON");
-        EEPROM.update(4, sounds);
+        EEPROM.update(3, sounds);
       }
     }
     joyBackToMiddleX = HIGH;
@@ -939,4 +942,3 @@ void xAxisLogic() {
     joyBackToMiddleX = LOW;
   }
 }
-
