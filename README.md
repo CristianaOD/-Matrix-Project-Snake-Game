@@ -131,5 +131,6 @@ Display relevant game info. This menu should only be closed by the player, press
 </details>
 <details>
   <summary><h2><b>Video🎥</b></h2></summary>
-[![A link to a video showcasing functionality ](https://youtu.be/S05PshwinNo)](https://consent.youtube.com/m?continue=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DS05PshwinNo%26ab_channel%3DDiana-CristianaOjoc%26cbrd%3D1&gl=RO&m=0&pc=yt&cm=4&hl=en&src=1)
+  
+[![A link to a video showcasing functionality ](https://youtu.be/EkAi83oUSeI)](https://www.youtube.com/watch?v=EkAi83oUSeI&ab_channel=Diana-CristianaOjoc)
 </details>
