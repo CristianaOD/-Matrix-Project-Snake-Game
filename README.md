@@ -75,6 +75,7 @@ that’s directly connected to 5v). Save it to eeprom.
   
   - The snake does not gradually grow after eating the flashing dots
   - LCD and matrix brightness not working
+  - The on/off option for the sound is not functional
   
 </details>
 <details>
@@ -121,9 +122,7 @@ that’s directly connected to 5v). Save it to eeprom.
 
   🖇**4. Upon game ending:**
   
-Display relevant game info: score, time, lives left etc. Must
-inform player if he/she beat the highscore. This menu
-should only be closed by the player, pressing a button.
+Display relevant game info. This menu should only be closed by the player, pressing a button.
  
 </details>
 <details>
