@@ -516,7 +516,7 @@ void buttonLogic() {
           lcd.print("TIME: ");
           unsigned long elapsedTime = currentTime - eatStartTime;
           lcd.print(elapsedTime / 1000);  // afiseaza timpul in secunde
-          lc.clearDisplay(0);  // clear screen
+          lc.clearDisplay(0);  
           matrix[xPos][yPos] = 1;
           generateFood();
           
