@@ -479,7 +479,6 @@ void blinkLetterName() {
   }
 }
 
-// function used for different uses of the button of the joystick
 void buttonLogic() {
   if (swState != lastSwState) {
     lastDebounceTime = millis();
